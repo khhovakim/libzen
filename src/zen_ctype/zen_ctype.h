@@ -1,5 +1,9 @@
-#ifndef   __Zen_Util__
-# define  __Zen_Util__
+// zen_ctype.h
+// Header file for character type checking functions.
+//
+// Part of libzen, a utility library.
+#ifndef   __Zen_CType__
+# define  __Zen_CType__
 
 /**
  * @brief Checks whether the given integer value corresponds to an ASCII character.
@@ -10,7 +14,7 @@
  * @param  c The integer value to check.
  * @return 1 if c is an ASCII character, 0 otherwise.
  */
-int zen_isascii(int c);
+extern int zen_isascii(int c);
 
 /**
  * @brief Checks whether the given integer value is an alphanumeric character.
@@ -20,7 +24,7 @@ int zen_isascii(int c);
  * @param  c The integer value to check.
  * @return 1 if c is alphanumeric, 0 otherwise.
  */
-int zen_isalnum(int c);
+extern int zen_isalnum(int c);
 
 /**
  * @brief Checks whether the given integer value is an alphabetic character.
@@ -30,7 +34,7 @@ int zen_isalnum(int c);
  * @param  c The integer value to check.
  * @return 1 if c is alphabetic, 0 otherwise.
  */
-int zen_isalpha(int c);
+extern int zen_isalpha(int c);
 
 /**
  * @brief Checks whether the given integer value is a decimal digit.
@@ -40,7 +44,7 @@ int zen_isalpha(int c);
  * @param  c The integer value to check.
  * @return 1 if c is a digit, 0 otherwise.
  */
-int zen_isdigit(int c);
+extern int zen_isdigit(int c);
 
 /**
  * @brief Checks whether the given integer value is a printable ASCII character.
@@ -50,7 +54,7 @@ int zen_isdigit(int c);
  * @param  c The integer value to check.
  * @return 1 if c is printable, 0 otherwise.
  */
-int zen_isprint(int c);
+extern int zen_isprint(int c);
 
 /**
  * @brief Checks whether the given integer value is a whitespace character.
@@ -60,7 +64,7 @@ int zen_isprint(int c);
  * @param  c The integer value to check.
  * @return 1 if c is a whitespace character, 0 otherwise.
  */
-int zen_isspace(int c);
+extern int zen_isspace(int c);
 
 /**
  * @brief Converts a lowercase ASCII letter to its uppercase equivalent.
@@ -71,7 +75,7 @@ int zen_isspace(int c);
  * @param  c The integer value representing the character to convert.
  * @return The uppercase equivalent if c is lowercase, otherwise returns c unchanged.
  */
-int zen_toupper(int c);
+extern int zen_toupper(int c);
 
 /**
  * @brief Converts an uppercase ASCII letter to its lowercase equivalent.
@@ -82,6 +86,6 @@ int zen_toupper(int c);
  * @param  c The integer value representing the character to convert.
  * @return The lowercase equivalent if c is uppercase, otherwise returns c unchanged.
  */
-int zen_tolower(int c);
+extern int zen_tolower(int c);
 
-#endif // __Zen_Util__
+#endif // __Zen_CType__

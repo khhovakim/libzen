@@ -1,6 +1,7 @@
 # libzen
 
 <details open>
+
   <summary><h2>Utility functions</h2></summary>
 
   Name | Prototype | Description
@@ -16,18 +17,40 @@
 
 </details>
 
-  <!-- [strlen](./ft_strlen.c) | `size_t  ft_strlen(const char *s);` | _calculate the length of a string_
-  [memset](./ft_memset.c) | `void  *ft_memset(void *s, int c, size_t n);` | _fill memory with a constant byte_
-  [bzero](./ft_bzero.c) | `void  ft_bzero(void *s, size_t n);` | _write zero-valued bytes_
-  [memcpy](./ft_memcpy.c) | `void  *ft_memcpy(void *dest, const void *src, size_t n);` | _copy memory area (can only copy in forward direction)_
-  [memmove](./ft_memmove.c) | `void  *ft_memmove(void *dest, const void *src, size_t n);` | _copy memory area (can copy in both forward and backward direction)_
-  [strlcpy](./ft_strlcpy.c) | `size_t  ft_strlcpy(char *dst, const char *src, size_t size);` | _size-bounded string copying_
-  [strlcat](./ft_strlcat.c) | `size_t  ft_strlcat(char *dst, const char *src, size_t size);` | _size-bounded string concatenation_
-  [strchr](./ft_strchr.c) | `char  *ft_strchr(const char *s, int c)` | _locate a character in a string (1st occurrence)_
+
+<details open>
+
+  <summary><h2>String functions</h2></summary>
+
+  Name | Prototype | Description
+  --|--|--
+  [strlen](./src/str/zen_strlen.c)   | `size_t  zen_strlen(const char *s);`                            | _calculate the length of a string_
+  [strlcpy](./src/str/zen_strlcpy.c) | `size_t  zen_strlcpy(char *dst, const char *src, size_t size);` | _size-bounded string copying_
+  [strlcat](./src/str/zen_strlcat.c) | `size_t  zen_strlcat(char *dst, const char *src, size_t size);` | _size-bounded string concatenation_
+
+</details>
+
+<details open>
+
+  <summary><h2>Memory functions</h2></summary>
+
+  Name | Prototype | Description
+  --|--|--
+
+</details>
+  <!--
+  [strchr](./ft_strchr.c)   | `char  *ft_strchr(const char *s, int c)` | _locate a character in a string (1st occurrence)_
   [strrchr](./ft_strrchr.c) | `char  *ft_strrchr(const char *s, int c)` | _locate a character in a string (last occurrence)_
   [strncmp](./ft_strncmp.c) | `int  ft_strncmp(const char *s1, const char *s2, size_t n)` | _compare two strings_
-  [memchr](./ft_memchr.c) | `void  *ft_memchr(const void *s, int c, size_t n)` | _scan memory for a character_
   [strnstr](./ft_strnstr.c) | `char  *ft_strnstr(const char *big, const char *little, size_t len)` | _locate a substring in a string_
+  [strdup](./ft_strdup.c)   | `char *ft_strdup(const char *s);` | _duplicate a string_
+
+  [memset](./ft_memset.c)   | `void  *ft_memset(void *s, int c, size_t n);` | _fill memory with a constant byte_
+  [memcpy](./ft_memcpy.c)   | `void  *ft_memcpy(void *dest, const void *src, size_t n);` | _copy memory area (can only copy in forward direction)_
+  [memmove](./ft_memmove.c) | `void  *ft_memmove(void *dest, const void *src, size_t n);` | _copy memory area (can copy in both forward and backward direction)_
+  [memchr](./ft_memchr.c)   | `void  *ft_memchr(const void *s, int c, size_t n)` | _scan memory for a character_
+  [calloc](./ft_calloc.c)   | `void  *ft_calloc(size_t nmemb, size_t size);` | _allocate dynamic memory: the memory is set to zero_
+  [bzero](./ft_bzero.c)     | `void  ft_bzero(void *s, size_t n);` | _write zero-valued bytes_
+
   [atoi](./ft_atoi.c) | `int  ft_atoi(const char *nptr)` | _convert a string to an integer_
-  [calloc](./ft_calloc.c) | `void  *ft_calloc(size_t nmemb, size_t size);` | _allocate dynamic memory: the memory is set to zero_
-  [strdup](./ft_strdup.c) | `char *ft_strdup(const char *s);` | _duplicate a string_ -->
+  -->

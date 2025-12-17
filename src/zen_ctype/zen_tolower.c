@@ -1,6 +1,7 @@
 // zen_tolower.c
 // Converts an uppercase letter to its lowercase equivalent.
 // If the character is not an uppercase letter, it is returned unchanged.
+//
 // Part of libzen, a utility library.
 
 // 'A' -> 65
@@ -8,11 +9,9 @@
 // 'a' -> 97
 // 'z' -> 122
 
-int zen_isupper(int);
+#include "zen_ctype.h"  // for zen_isupper
 
 int zen_tolower(int c)
 {
-    if ( zen_isupper(c) )
-        return c + ('a' - 'A');
-    return c;
+    return ( zen_isupper(c) ? c + ('a' - 'A') : c );
 }

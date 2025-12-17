@@ -108,17 +108,17 @@ $(EXE) : $(OBJ)
 # ===== Compile rules =====
 $(OBJDIR)/%.o: %.c Makefile
 	@mkdir -p $(@D)
-	@echo "$(COMPILING) $(_WHITE)[$(CC)][$(TYPE)] $< → $@$(_NC)"
+	@echo "\r%100s\r$(COMPILING) $(_WHITE)[$(CC)][$(TYPE)] $< → $@$(_NC)"
 	@$(CC) $(CFLAGS) $(DEPFLAGS) $(IFLAGS) -c $< -o $@
 
 $(OBJDIR)/%.o: %.cc Makefile
 	@mkdir -p $(@D)
-	@echo "$(COMPILING) $(_WHITE)[$(CXX)][$(TYPE)] $< → $@$(_NC)"
+	@echo "\r%100s\r$(COMPILING) $(_WHITE)[$(CXX)][$(TYPE)] $< → $@$(_NC)"
 	@$(CXX) $(CXXFLAGS) $(DEPFLAGS) $(IFLAGS) -c $< -o $@
 
 $(OBJDIR)/%.o: %.cpp Makefile
 	@mkdir -p $(@D)
-	@echo "$(COMPILING) $(_WHITE)[$(CXX)][$(TYPE)] $< → $@$(_NC)"
+	@echo "\r%100s\r$(COMPILING) $(_WHITE)[$(CXX)][$(TYPE)] $< → $@$(_NC)"
 	@$(CXX) $(CXXFLAGS) $(DEPFLAGS) $(IFLAGS) -c $< -o $@
 
 # ===== Auto-include dependency files =====

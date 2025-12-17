@@ -1,6 +1,7 @@
 // zen_isspace.c
 // Checks for whitespace characters: space, tab, newline, vertical tab, form feed, carriage return.
 // Returns non-zero if c is a whitespace character, zero otherwise.
+//
 // Part of libzen, a utility library.
 
 // ' '  -> 32
