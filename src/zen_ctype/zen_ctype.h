@@ -88,4 +88,23 @@ extern int zen_toupper(int c);
  */
 extern int zen_tolower(int c);
 
+/**
+ * @brief Checks whether the given integer value is a lowercase ASCII letter.
+ *
+ * This function returns 1 if the input is a lowercase letter (a-z), 0 otherwise.
+ *
+ * @param  c The integer value to check.
+ * @return 1 if c is lowercase, 0 otherwise.
+ */
+extern int zen_islower(int c);
+
+/**
+ * @brief Checks whether the given integer value is an uppercase ASCII letter.
+ *
+ * This function returns 1 if the input is an uppercase letter (A-Z), 0 otherwise.
+ *
+ * @param  c The integer value to check.
+ * @return 1 if c is uppercase, 0 otherwise.
+ */
+extern int zen_isupper(int c);
 #endif // __Zen_CType__
