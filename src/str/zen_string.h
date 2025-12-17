@@ -42,4 +42,55 @@ extern size_t zen_strlcpy(char *dest, const char *src, size_t size);
  */
 extern size_t zen_strlcat(char *dest, const char *src, size_t size);
 
+/**
+ * @brief Compares two strings.
+ * 
+ * This function compares the two strings s1 and s2.
+ * It returns 0 if they are equal, a negative value if s1 is less than s2,
+ * and a positive value if s1 is greater than s2.
+ * 
+ * @param  s1 The first string to compare.
+ * @param  s2 The second string to compare.
+ * @return An integer indicating the result of the comparison.
+ */
+extern int zen_strcmp(const char *s1, const char *s2);
+
+/**
+ * @brief Compares two strings up to n characters.
+ * 
+ * This function compares the two strings s1 and s2 up to n characters.
+ * It returns 0 if they are equal, a negative value if s1 is less than s2,
+ * and a positive value if s1 is greater than s2.
+ * 
+ * @param  s1 The first string to compare.
+ * @param  s2 The second string to compare.
+ * @param  n The maximum number of characters to compare.
+ * @return An integer indicating the result of the comparison.
+ */
+extern int zen_strncmp(const char *s1, const char *s2, size_t n);
+
+/**
+ * @brief Locates the first occurrence of a character in a string.
+ *
+ * This function returns a pointer to the first occurrence of the character c
+ * in the string s, or NULL if the character is not found.
+ *
+ * @param  s The string to search.
+ * @param  c The character to locate.
+ * @return A pointer to the first occurrence of c in s, or NULL if not found.
+ */
+extern char *zen_strchr(const char *s, int c);
+
+/**
+ * @brief Locates the last occurrence of a character in a string.
+ *
+ * This function returns a pointer to the last occurrence of the character c
+ * in the string s, or NULL if the character is not found.
+ *
+ * @param  s The string to search.
+ * @param  c The character to locate.
+ * @return A pointer to the last occurrence of c in s, or NULL if not found.
+ */
+extern char *zen_strrchr(const char *s, int c);
+
 #endif // __Zen_String__
