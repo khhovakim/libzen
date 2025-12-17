@@ -18,7 +18,7 @@ int zen_strncmp(const char *s1, const char *s2, size_t n)
         return *us1;
     }
 
-    while ( n && *us1 && ( *us1 == *us2 ) ) {
+    while ( n && *us1 && *us2 && ( *us1 == *us2 ) ) {
         ++us1;
         ++us2;
         --n;

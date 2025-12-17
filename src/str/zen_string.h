@@ -93,4 +93,29 @@ extern char *zen_strchr(const char *s, int c);
  */
 extern char *zen_strrchr(const char *s, int c);
 
+/**
+ * @brief Locates the first occurrence of a substring in a string.
+ *
+ * This function returns a pointer to the first occurrence of the substring little
+ * in the string big, or NULL if little is not found in big.
+ *
+ * @param  big The string to search.
+ * @param  little The substring to locate.
+ * @return A pointer to the first occurrence of little in big, or NULL if not found.
+ */
+extern char *zen_strstr(const char *big, const char *little);
+
+/**
+ * @brief Locates the first occurrence of a substring in a string within a given length.
+ * 
+ * This function returns a pointer to the first occurrence of the substring little
+ * in the string big, where not more than len characters are searched.
+ * It returns NULL if little is not found within the first len characters of big.
+ * 
+ * @param  big The string to search.
+ * @param  little The substring to locate.
+ * @param  len The maximum number of characters to search in big.
+ * @return A pointer to the first occurrence of little in big within len characters, or NULL if not found.
+ */
+extern char *zen_strnstr(const char *big, const char *little, size_t len);
 #endif // __Zen_String__
