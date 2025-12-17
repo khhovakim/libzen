@@ -24,9 +24,15 @@
 
   Name | Prototype | Description
   --|--|--
-  [strlen](./src/str/zen_strlen.c)   | `size_t  zen_strlen(const char *s);`                            | _calculate the length of a string_
-  [strlcpy](./src/str/zen_strlcpy.c) | `size_t  zen_strlcpy(char *dst, const char *src, size_t size);` | _size-bounded string copying_
-  [strlcat](./src/str/zen_strlcat.c) | `size_t  zen_strlcat(char *dst, const char *src, size_t size);` | _size-bounded string concatenation_
+  [strlen](./src/str/zen_strlen.c)   | `size_t  zen_strlen(const char *s);`                                  | _calculate the length of a string_
+  [strlcpy](./src/str/zen_strlcpy.c) | `size_t  zen_strlcpy(char *dst, const char *src, size_t size);`       | _size-bounded string copying_
+  [strlcat](./src/str/zen_strlcat.c) | `size_t  zen_strlcat(char *dst, const char *src, size_t size);`       | _size-bounded string concatenation_
+  [strchr](./src/str/zen_strchr.c)   | `char  *zen_strchr(const char *s, int c)`                             | _locate a character in a string (1st occurrence)_
+  [strrchr](./src/str/zen_strrchr.c) | `char  *zen_strrchr(const char *s, int c)`                            | _locate a character in a string (last occurrence)_
+  [strstr](./src/str/zen_strstr.c)   | `char  *zen_strstr(const char *big, const char *little)`              | _locate a substring in a string_
+  [strnstr](./src/str/zen_strnstr.c) | `char  *zen_strnstr(const char *big, const char *little, size_t len)` | _locate a substring in a string  with length limit_
+  [strcmp](./src/str/zen_strcmp.c)   | `int  zen_strcmp(const char *s1, const char *s2)`                     | _compare two strings_
+  [strncmp](./src/str/zen_strncmp.c) | `int  zen_strncmp(const char *s1, const char *s2, size_t n)`          | _compare two strings up to n characters_
 
 </details>
 
@@ -39,10 +45,7 @@
 
 </details>
   <!--
-  [strchr](./ft_strchr.c)   | `char  *ft_strchr(const char *s, int c)` | _locate a character in a string (1st occurrence)_
-  [strrchr](./ft_strrchr.c) | `char  *ft_strrchr(const char *s, int c)` | _locate a character in a string (last occurrence)_
-  [strncmp](./ft_strncmp.c) | `int  ft_strncmp(const char *s1, const char *s2, size_t n)` | _compare two strings_
-  [strnstr](./ft_strnstr.c) | `char  *ft_strnstr(const char *big, const char *little, size_t len)` | _locate a substring in a string_
+  
   [strdup](./ft_strdup.c)   | `char *ft_strdup(const char *s);` | _duplicate a string_
 
   [memset](./ft_memset.c)   | `void  *ft_memset(void *s, int c, size_t n);` | _fill memory with a constant byte_
