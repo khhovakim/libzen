@@ -113,12 +113,12 @@ $(OBJDIR)/%.o: %.c Makefile
 
 $(OBJDIR)/%.o: %.cc Makefile
 	@mkdir -p $(@D)
-	@echo "$(COMPILING) $(_WHITE)[$(CXX)][$(_PURPLE)$(TYPE)$(_WHITE)] [$(_YELLOW)$<$(_WHITE)] → $(_GREEN)$@$(_NC)"
+	@echo "$(COMPILING) $(_WHITE)[$(_CYAN)$(CXX)$(_WHITE)][$(_PURPLE)$(TYPE)$(_WHITE)] [$(_YELLOW)$<$(_WHITE)] → $(_GREEN)$@$(_NC)"
 	@$(CXX) $(CXXFLAGS) $(DEPFLAGS) $(IFLAGS) -c $< -o $@
 
 $(OBJDIR)/%.o: %.cpp Makefile
 	@mkdir -p $(@D)
-	@echo "$(COMPILING) $(_WHITE)[$(CXX)][$(_PURPLE)$(TYPE)$(_WHITE)] [$(_YELLOW)$<$(_WHITE)] → $(_GREEN)$@$(_NC)"
+	@echo "$(COMPILING) $(_WHITE)[$(_CYAN)$(CXX)$(_WHITE)][$(_PURPLE)$(TYPE)$(_WHITE)] [$(_YELLOW)$<$(_WHITE)] → $(_GREEN)$@$(_NC)"
 	@$(CXX) $(CXXFLAGS) $(DEPFLAGS) $(IFLAGS) -c $< -o $@
 
 # ===== Auto-include dependency files =====
